@@ -9,8 +9,9 @@ class TestController extends Controller
 {
     //测试redis
     	function redis1(){
-    		$key='yaoyao';
-    		Redis::set($key);
+    		
+    		$val='yaoyao';
+    		Redis::set($key,$val);
     		echo "换存成功";
     	}
 
