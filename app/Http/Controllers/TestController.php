@@ -16,6 +16,7 @@ class TestController extends Controller
     	}
 
     	function redis2(){
+            $key=time();
     		$data=Redis::get($key);
     		echo $data;
     	}
