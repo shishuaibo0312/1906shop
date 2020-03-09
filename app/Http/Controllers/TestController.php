@@ -11,12 +11,13 @@ class TestController extends Controller
     	function redis1(){
     		
     		$val='yaoyao';
+            $key=123;
     		Redis::set($key,$val);
     		echo "换存成功";
     	}
 
     	function redis2(){
-            $key=time();
+            $key=123;
     		$data=Redis::get($key);
     		echo $data;
     	}
