@@ -20,5 +20,6 @@ Route::get('/', function () {
 
 Route::prefix('test')->group(function () {
 	Route::get('redis1','TestController@redis1');				
-	Route::get('redis2','TestController@redis2');			
+	Route::get('redis2','TestController@redis2');	
+	Route::get('mysql','TestController@mysql');		
 });
