@@ -29,11 +29,14 @@ class TestController extends Controller
         }
 
         function mysql2(){
-            $data=[
-                'c_name'  => 'zhangsan',
-                'email' =>'123456@qq.com',
-            ];
+            // $data=[
+            //     'c_name'  => 'zhangsan',
+            //     'email' =>'123456@qq.com',
+            // ];
+            $data['c_name']='yy';
+            $data['email']='34567@qq.com';
             $res=DB::table('yaoyao')->insert($data);
-        var_dump($res);
+            //$res=DB::table('yaoyao')->first();
+            var_dump($res);
         }
 }
