@@ -27,4 +27,13 @@ class TestController extends Controller
           $res=Db::table('c_users')->first();      
           var_dump($res);
         }
+
+        function mysql2(){
+            $data=[
+                'c_name'  => 'zhangsan',
+                'email' =>'123456@qq.com',
+            ];
+            $res=DB::table('yaoyao')->insert($data);
+        var_dump($res);
+        }
 }
