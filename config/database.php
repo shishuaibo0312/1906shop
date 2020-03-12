@@ -44,6 +44,19 @@ return [
         ],
 
         'mysql' => [
+            'mysql' => [
+                'read' => [
+                    'host' => [
+                        '192.168.235.145',
+                        //'196.168.1.2',
+                    ],
+                ],
+            'write' => [
+                'host' => [
+                    '196.168.235.144',
+                 ],
+            ],
+            'sticky'    => true,
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
